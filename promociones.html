@@ -13,14 +13,12 @@
         <span></span>
     </div>
     <div class="container">
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <ul>
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="logo-flickr"></ion-icon>
                         </span>
-                        
                         <em><strong><span class="title">Sawita Outfit</span></strong></em>
                     </a>
                 </li>
@@ -77,11 +75,7 @@
                         </span>
                         <span class="title">FACEBOOK</span>
                     </a>
-                </li>
-
-
-
-                
+                </li>               
             </ul>
         </div>
     </div>
@@ -98,5 +92,10 @@
         
     </video>
 </div>
-
+    <script>
+        function toggleMenu() {
+            var navigation = document.getElementById("navigation");
+            navigation.classList.toggle("active");
+        }
+    </script>
 </html>
