@@ -42,7 +42,7 @@ body {
 .menu-icon span {
     height: 5px;
     width: 100%;
-    background: var(--blue);
+    background: var(--gray);
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -52,8 +52,8 @@ body {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: var(--blue);
-    border-left: 10px solid rgb(255, 38, 0) var(--blue);
+    background: var(--blank2);
+    border-left: 10px solid rgb(255, 38, 0) var(--blank2);
     transition: 0.5s;
     overflow: hidden;
     transform: translateX(-100%);
@@ -97,7 +97,7 @@ body {
 }
 
 .navigation ul li:hover a {
-    color: var(--blue);
+    color: var(--blank2);
 }
 
 .navigation ul li a .icon {
