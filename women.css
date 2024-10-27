@@ -8,7 +8,7 @@
 }
 
 :root {
-    --blue: #b10000b1;
+    --blue: #da1c1cdb;
     --white: #ffffff;
     --gray: #ffffff;
     --blank1: #000000;
@@ -37,6 +37,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     z-index: 1000;
+    
 }
 
 .menu-icon span {
@@ -53,7 +54,7 @@ body {
     width: 300px;
     height: 100%;
     background: var(--blank2);
-    border-left: 10px solid rgb(255, 38, 0) var(--blank2);
+    border-left: 10px solid rgb(255, 38, 0) var(--blank1);
     transition: 0.5s;
     overflow: hidden;
     transform: translateX(-100%);
@@ -97,7 +98,7 @@ body {
 }
 
 .navigation ul li:hover a {
-    color: var(--blank2);
+    color: var(--blank1);
 }
 
 .navigation ul li a .icon {
@@ -220,4 +221,435 @@ video {
     video {
         object-fit: cover; /* Ajusta el video para pantallas pequeñas */
     }
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: var(--blank2);
+}
+
+.product-card button {
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+    background: #e60000;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* CSS */
+/* Contenedor para centrar */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajusta para centrar verticalmente */
+
+}
+
+  /* Tu CSS original */
+.card {
+    /* color used to softly clip top and bottom of the .words container */
+    --bg-color: #212121;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+}
+
+.loader {
+    color: rgb(255, 251, 251);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.words {
+    overflow: hidden;
+    position: relative;
+}
+
+.words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+    );
+    z-index: 20;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #b7fa6a;
+    animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+    10% {
+    transform: translateY(-102%);
+    }
+    25% {
+    transform: translateY(-100%);
+    }
+    35% {
+    transform: translateY(-202%);
+    }
+    50% {
+    transform: translateY(-200%);
+    }
+    60% {
+    transform: translateY(-302%);
+    }
+    75% {
+    transform: translateY(-300%);
+    }
+    85% {
+    transform: translateY(-402%);
+    }
+    100% {
+    transform: translateY(-400%);
+    }
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Esto hace que el div ocupe toda la altura de la ventana */
+}
+
+.logo {
+    max-width: 100%; /* Ajusta el tamaño del logo */
+    max-height: 100%; /* Asegura que no se salga de su contenedor */
+}
+
+
+/* From Uiverse.io by himanshu9682 */ 
+.type--A {
+    --line_color: #555555;
+    --back_color: #ffecf6;
+  }
+  .type--B {
+    --line_color: #1b1919;
+    --back_color: #e9ecff;
+  }
+  .type--C {
+    --line_color: #00135c;
+    --back_color: #defffa;
+  }
+  .button {
+    position: relative;
+    z-index: 0;
+    width: 240px;
+    height: 56px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--line_color);
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+  }
+  .button__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .button::before,
+  .button::after,
+  .button__text::before,
+  .button__text::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--line_color);
+    transition: all 0.5s ease;
+  }
+  .button::before {
+    top: 0;
+    left: 54px;
+    width: calc(100% - 56px * 2 - 16px);
+  }
+  .button::after {
+    top: 0;
+    right: 54px;
+    width: 8px;
+  }
+  .button__text::before {
+    bottom: 0;
+    right: 54px;
+    width: calc(100% - 56px * 2 - 16px);
+  }
+  .button__text::after {
+    bottom: 0;
+    left: 54px;
+    width: 8px;
+  }
+  .button__line {
+    position: absolute;
+    top: 0;
+    width: 56px;
+    height: 100%;
+    overflow: hidden;
+  }
+  .button__line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 300px;
+    border: solid 3px var(--line_color);
+  }
+  .button__line:nth-child(1),
+  .button__line:nth-child(1)::before {
+    left: 0;
+  }
+  .button__line:nth-child(2),
+  .button__line:nth-child(2)::before {
+    right: 0;
+  }
+  .button:hover {
+    letter-spacing: 6px;
+  }
+  .button:hover::before,
+  .button:hover .button__text::before {
+    width: 8px;
+  }
+  .button:hover::after,
+  .button:hover .button__text::after {
+    width: calc(100% - 56px * 2 - 16px);
+  }
+  .button__drow1,
+  .button__drow2 {
+    position: absolute;
+    z-index: -1;
+    border-radius: 16px;
+    transform-origin: 16px 16px;
+  }
+  .button__drow1 {
+    top: -16px;
+    left: 40px;
+    width: 32px;
+    height: 0;
+    transform: rotate(30deg);
+  }
+  .button__drow2 {
+    top: 44px;
+    left: 77px;
+    width: 32px;
+    height: 0;
+    transform: rotate(-127deg);
+  }
+  .button__drow1::before,
+  .button__drow1::after,
+  .button__drow2::before,
+  .button__drow2::after {
+    content: "";
+    position: absolute;
+  }
+  .button__drow1::before {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 32px;
+    border-radius: 16px;
+    transform-origin: 16px 16px;
+    transform: rotate(-60deg);
+  }
+  .button__drow1::after {
+    top: -10px;
+    left: 45px;
+    width: 0;
+    height: 32px;
+    border-radius: 16px;
+    transform-origin: 16px 16px;
+    transform: rotate(69deg);
+  }
+  .button__drow2::before {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 32px;
+    border-radius: 16px;
+    transform-origin: 16px 16px;
+    transform: rotate(-146deg);
+  }
+  .button__drow2::after {
+    bottom: 26px;
+    left: -40px;
+    width: 0;
+    height: 32px;
+    border-radius: 16px;
+    transform-origin: 16px 16px;
+    transform: rotate(-262deg);
+  }
+  .button__drow1,
+  .button__drow1::before,
+  .button__drow1::after,
+  .button__drow2,
+  .button__drow2::before,
+  .button__drow2::after {
+    background: var(--back_color);
+  }
+  .button:hover .button__drow1 {
+    animation: drow1 ease-in 0.06s;
+    animation-fill-mode: forwards;
+  }
+  .button:hover .button__drow1::before {
+    animation: drow2 linear 0.08s 0.06s;
+    animation-fill-mode: forwards;
+  }
+  .button:hover .button__drow1::after {
+    animation: drow3 linear 0.03s 0.14s;
+    animation-fill-mode: forwards;
+  }
+  .button:hover .button__drow2 {
+    animation: drow4 linear 0.06s 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .button:hover .button__drow2::before {
+    animation: drow3 linear 0.03s 0.26s;
+    animation-fill-mode: forwards;
+  }
+  .button:hover .button__drow2::after {
+    animation: drow5 linear 0.06s 0.32s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes drow1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100px;
+    }
+  }
+  @keyframes drow2 {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    11% {
+      opacity: 1;
+    }
+    100% {
+      width: 120px;
+    }
+  }
+  @keyframes drow3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80px;
+    }
+  }
+  @keyframes drow4 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 120px;
+    }
+  }
+  @keyframes drow5 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 124px;
+    }
+  }
+  
+  .container-boton1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  .container-boton2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Esto hace que el div ocupe toda la altura de la ventana */
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Esto hace que el div ocupe toda la altura de la ventana */
 }
