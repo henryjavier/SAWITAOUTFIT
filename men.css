@@ -8,7 +8,7 @@
 }
 
 :root {
-    --blue: #b10000b1;
+    --blue: #da1c1cdb;
     --white: #ffffff;
     --gray: #ffffff;
     --blank1: #000000;
@@ -37,6 +37,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     z-index: 1000;
+    
 }
 
 .menu-icon span {
@@ -53,7 +54,7 @@ body {
     width: 300px;
     height: 100%;
     background: var(--blank2);
-    border-left: 10px solid rgb(255, 38, 0) var(--blank2);
+    border-left: 10px solid rgb(255, 38, 0) var(--blank1);
     transition: 0.5s;
     overflow: hidden;
     transform: translateX(-100%);
@@ -97,7 +98,7 @@ body {
 }
 
 .navigation ul li:hover a {
-    color: var(--blank2);
+    color: var(--blank1);
 }
 
 .navigation ul li a .icon {
@@ -221,8 +222,6 @@ video {
         object-fit: cover; /* Ajusta el video para pantallas pequeñas */
     }
 }
-
-
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -277,6 +276,10 @@ video {
     transform: scale(1.05);
 }
 
+
+
+/* CSS */
+/* Contenedor para centrar */
 
 .center-container {
     display: flex;
@@ -361,7 +364,6 @@ video {
 }
 
 
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -375,6 +377,7 @@ video {
 }
 
 
+/* From Uiverse.io by himanshu9682 */ 
 .type--A {
     --line_color: #555555;
     --back_color: #ffecf6;
