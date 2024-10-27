@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); 
 
-*{
+* {
     font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
@@ -15,18 +15,40 @@
     --blank2: #000000;
 }
 
-body{
+body {
     min-height: 100vh;
     overflow-x: hidden;
-
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
 }
 
-.navigation{
+/* Menu Icon */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon span {
+    height: 5px;
+    width: 100%;
+    background: var(--blue);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Navigation */
+.navigation {
     position: fixed;
     width: 300px;
     height: 100%;
@@ -34,16 +56,21 @@ body{
     border-left: 10px solid rgb(255, 38, 0) var(--blue);
     transition: 0.5s;
     overflow: hidden;
+    transform: translateX(-100%);
 }
 
-.navigation ul{
+.navigation.active {
+    transform: translateX(0);
+}
+
+.navigation ul {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.navigation ul li{
+.navigation ul li {
     position: relative;
     width: 100%;
     list-style: none;
@@ -96,7 +123,7 @@ body{
     white-space: nowrap;
 }
 
-.navigation ul li:hover a::before{
+.navigation ul li:hover a::before {
     content: '';
     position: absolute;
     right: 0;
@@ -109,7 +136,7 @@ body{
     pointer-events: none;
 }
 
-.navigation ul li:hover a::after{
+.navigation ul li:hover a::after {
     content: '';
     position: absolute;
     right: 0;
@@ -121,8 +148,6 @@ body{
     box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
-
-
 
 .video-container {
     position: fixed;
