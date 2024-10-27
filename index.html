@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENDENCIA URBANA</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+        <div class="navigation" id="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-microsoft"></ion-icon>
+                        </span>
+                        <em><strong><span class="title">Sawita Outfit</span></strong></em>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:3000/page.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">INICIO</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:3000/men.html">
+                        <span class="icon">
+                            <ion-icon name="accessibility-outline"></ion-icon>
+                        </span>
+                        <span class="title">OUTFIT MEN</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:3000/women.html">
+                        <span class="icon">
+                            <ion-icon name="woman-outline"></ion-icon>
+                        </span>
+                        <span class="title">OUTFIT WOMEN</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:3000/promociones.html">
+                        <span class="icon">
+                            <ion-icon name="shirt-outline"></ion-icon>
+                        </span>
+                        <span class="title">PROMOCIONES</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </span>
+                        <span class="title">WHATSAPP</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                        <span class="title">FACEBOOK</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="page.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://cdn.pixabay.com/video/2019/03/07/21827-336300898_large.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navigation = document.getElementById("navigation");
+            navigation.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
