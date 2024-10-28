@@ -365,7 +365,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh; /* Esto hace que el div ocupe toda la altura de la ventana */
+    height: 30vh; /* Esto hace que el div ocupe toda la altura de la ventana */
 }
 
 .logo {
