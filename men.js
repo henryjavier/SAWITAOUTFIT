@@ -1,4 +1,4 @@
-let slideIndex = 0;
+let slideMen = 0;
 const slides = document.querySelector(".carousel-slider");
 const dots = document.querySelectorAll(".dot");
 
