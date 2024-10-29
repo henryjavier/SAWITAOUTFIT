@@ -222,59 +222,59 @@ video {
         object-fit: cover; /* Ajusta el video para pantallas pequeñas */
     }
 }
-/* Estilos generales para centrar y ajustar el contenedor */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
 .product-card {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  margin: auto;
-  text-align: center;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-/* Estilos para las imágenes */
 .product-card img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Animación de cambio automático */
-@keyframes changeImage {
-  0%, 20% { opacity: 1; }
-  25%, 100% { opacity: 0; }
-}
-
-/* Añadir animación a cada imagen con tiempos escalonados */
-.product-card img:nth-child(1) { animation: changeImage 12s infinite; }
-.product-card img:nth-child(2) { animation: changeImage 12s infinite 3s; }
-.product-card img:nth-child(3) { animation: changeImage 12s infinite 6s; }
-.product-card img:nth-child(4) { animation: changeImage 12s infinite 9s; }
-
-/* Estilos adicionales */
 .product-card h2 {
-  position: relative;
-  z-index: 1;
-  margin-top: 15px;
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 .product-card p {
-  position: relative;
-  z-index: 1;
+    font-size: 1.2rem;
+    color: var(--blank2);
 }
 
-.product-card a button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.product-card button {
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
+.product-card button:hover {
+    background: #e60000;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
 
 
 
