@@ -1,14 +1,3 @@
-let list = document.querySelectorAll(".navigation li");
-
-function activeLink(){
-    list.forEach((item) => {
-        item.classList.remove("hovered");
-    });
-    this.classList.add("hovered");
-}
-
-list.forEach((item) => item.addEventListener("mouseover", activeLink))
-
 let slideIndex = 0;
 const slides = document.querySelector(".carousel-slider");
 const dots = document.querySelectorAll(".dot");
@@ -35,3 +24,24 @@ setInterval(() => {
   slideIndex = (slideIndex + 1) % dots.length;
   showSlide(slideIndex);
 }, 3000);
+
+
+
+
+
+
+
+
+
+
+
+let list = document.querySelectorAll(".navigation li");
+
+function activeLink(){
+    list.forEach((item) => {
+        item.classList.remove("hovered");
+    });
+    this.classList.add("hovered");
+}
+
+list.forEach((item) => item.addEventListener("mouseover", activeLink))
