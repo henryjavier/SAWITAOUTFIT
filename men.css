@@ -658,29 +658,31 @@ video {
 /* Estilo del contenedor del carrusel */
 .carousel {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px; /* Ancho reducido para ajustarse a los bordes */
+  height: 280px;
   overflow: hidden;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 /* Estilo para el deslizador de imágenes */
 .carousel-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 1200px; /* 4 imágenes de 300px cada una */
+  width: 100%; /* Ancho ajustado para que ocupe todo el espacio del contenedor */
 }
 
-/* Estilo de las imágenes dentro del carrusel */
 .carousel-slider img {
-  width: 300px;
-  height: 300px;
+  width: 100%; /* Ocupa el ancho total del carrusel */
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Estilo para los puntos de navegación */
 .carousel-dots {
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
