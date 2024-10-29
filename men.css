@@ -665,7 +665,7 @@ video {
 /* Estilo del contenedor del carrusel */
 .carousel {
   position: relative;
-  width: 280px; /* Ancho reducido para ajustarse a los bordes */
+  width: 300px; /* Ancho reducido para ajustarse a los bordes */
   height: 280px;
   overflow: hidden;
   margin: auto;
@@ -702,7 +702,7 @@ video {
   background-color: #bbb;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .carousel-dots .dot.active {
