@@ -18,7 +18,12 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3; /* Fondo para mejorar contraste */
 }
+
 
 .container {
     position: relative;
