@@ -653,7 +653,7 @@ video {
 
 
 
-figure{
+.figure{
 width: 350px;
 height: 250px;
 overflow: hidden;
@@ -662,13 +662,13 @@ border-radius: 5px;
 box-shadow: 1px 5px 25px rgba(0,0,0,0.5);
 margin: 45px;
 }
-figure img{
+.figure img{
 width: 500px;
 height: 100%;
 transition:1.0s;
 will-change: transform;
 }
-figure img:hover{
+.figure img:hover{
 transform: translateX(-30%);
 filter: brightness(80%);
 }
