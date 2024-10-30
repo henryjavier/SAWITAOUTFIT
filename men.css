@@ -231,7 +231,7 @@ video {
   align-items: flex-start; /* Alinea los productos en la parte superior */
   gap: 20px; /* Espacio entre cada tarjeta de producto */
   margin: 50px 0;
-  flex-wrap: nowrap; /* Evita que los elementos bajen a una nueva línea */
+  flex-wrap: wrap; /* Evita que los elementos bajen a una nueva línea */
   overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
 }
 
