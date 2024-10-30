@@ -713,3 +713,29 @@ video {
 .carousel-dots .dot.active {
   background-color: #717171;
 }
+
+
+/* Ajuste general para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .product-container {
+        flex-wrap: wrap; /* Permite que los elementos se alineen en múltiples filas en pantallas pequeñas */
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+    }
+
+    .product-card {
+        width: 90%; /* Ajusta el ancho del contenedor de productos para ocupar el 90% del ancho de la pantalla */
+        max-width: 350px; /* Limita el ancho máximo para que se vea bien en móviles */
+        margin: 10px 0; /* Añade margen entre cada tarjeta en la vista móvil */
+    }
+
+    .carousel {
+        width: 100%; /* Ajusta el carrusel para que ocupe todo el ancho del product-card */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .carousel-slider img {
+        width: 100%; /* La imagen ocupa todo el ancho del carrusel */
+        height: auto; /* Ajuste automático de altura para mantener la proporción */
+    }
+}
+
