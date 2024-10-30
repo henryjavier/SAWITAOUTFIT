@@ -22,7 +22,7 @@ function showSlide(carouselIndex, slideIndex) {
 
 // Función para cambiar a una imagen específica cuando se hace clic en un punto
 function currentSlide(n, carouselIndex) {
-    slideIndexes[carouselIndex] = n - 1; // Ajustar el índice
+    slideIndexes[carouselIndex] = n - 1; // Ajustar el índice al seleccionar el punto específico
     showSlide(carouselIndex, slideIndexes[carouselIndex]);
 }
 
