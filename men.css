@@ -240,7 +240,7 @@ video {
   background: var(--white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 320px; /* Ancho fijo para uniformidad */
+  width: 400px; /* Ancho fijo para uniformidad */
   padding: 20px 15px; /* Ajuste de padding para mantener contorno uniforme */
   text-align: center;
   transition: transform 0.3s ease;
