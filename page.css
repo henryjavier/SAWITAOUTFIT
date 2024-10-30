@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .menu-icon span {
