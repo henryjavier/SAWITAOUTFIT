@@ -57,6 +57,7 @@ body {
     transition: 0.5s;
     overflow: hidden;
     transform: translateX(-100%);
+    z-index: 1000
 }
 
 .navigation.active {
