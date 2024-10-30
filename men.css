@@ -227,13 +227,14 @@ video {
 .product-container {
   display: flex;
   flex-direction: row; /* Asegura que los elementos estén en una fila horizontal */
-  justify-content: center;
-  gap: 20px; /* Espacio entre los productos */
+  justify-content: center; /* Centra los productos horizontalmente */
+  align-items: flex-start; /* Alinea los productos en la parte superior */
+  gap: 20px; /* Espacio entre cada tarjeta de producto */
   margin: 50px 0;
-  z-index: 1;
-  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
   flex-wrap: nowrap; /* Evita que los elementos bajen a una nueva línea */
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
 }
+
 
 .product-card {
   background: var(--white);
