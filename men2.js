@@ -1,27 +1,35 @@
-let slideIndex = 0;
-const slides = document.querySelector(".carousel-slider");
-const dots = document.querySelectorAll(".dot");
+let slideIndexes = []; // Arreglo para almacenar el índice de cada carrusel
+const carousels = document.querySelectorAll(".carousel");
 
-function showSlide(index) {
-  const offset = -300 * index; // 300px es el ancho de cada imagen
-  slides.style.transform = `translateX(${offset}px)`;
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === index);
-  });
+carousels.forEach((carousel, index) => {
+    slideIndexes[index] = 0; // Inicializar el índice de cada carrusel
+    showSlide(index, slideIndexes[index]);
+});
+
+function showSlide(carouselIndex, slideIndex) {
+    const carousel = carousels[carouselIndex];
+    const slides = carousel.querySelectorAll(".carousel-slider img");
+    const dots = carousel.querySelectorAll(".dot");
+
+    // Ocultar todas las imágenes y eliminar la clase 'active' de los puntos
+    slides.forEach((slide) => (slide.style.display = "none"));
+    dots.forEach((dot) => dot.classList.remove("active"));
+
+    // Mostrar la imagen correspondiente y marcar el punto activo
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].classList.add("active");
 }
 
-// Configura la primera imagen activa
-showSlide(slideIndex);
-
-// Función para mostrar una imagen específica
-function currentSlide(n) {
-  slideIndex = n - 1;
-  showSlide(slideIndex);
+// Función para cambiar a una imagen específica cuando se hace clic en un punto
+function currentSlide(n, carouselIndex) {
+    slideIndexes[carouselIndex] = n - 1; // Ajustar el índice
+    showSlide(carouselIndex, slideIndexes[carouselIndex]);
 }
 
-// Cambia automáticamente cada 3 segundos
-setInterval(() => {
-  slideIndex = (slideIndex + 1) % dots.length;
-  showSlide(slideIndex);
-}, 3000);
-
+// Cambio automático de imagen cada 3 segundos para cada carrusel
+carousels.forEach((carousel, index) => {
+    setInterval(() => {
+        slideIndexes[index] = (slideIndexes[index] + 1) % carousel.querySelectorAll(".carousel-slider img").length;
+        showSlide(index, slideIndexes[index]);
+    }, 3000);
+});
