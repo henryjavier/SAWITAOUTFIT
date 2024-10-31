@@ -620,7 +620,7 @@ video {
 
 .carousel-slider {
   display: flex;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 5s ease-in-out;
   width: 100%;
 }
 
@@ -643,12 +643,12 @@ video {
 }
 
 .carousel-dots .dot {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   background-color: #bbb;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.8s;
+  transition: background-color 5s;
 }
 
 .carousel-dots .dot.active {
