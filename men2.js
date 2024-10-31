@@ -31,6 +31,6 @@ carousels.forEach((carousel, index) => {
     setInterval(() => {
         slideIndexes[index] = (slideIndexes[index] + 1) % carousel.querySelectorAll(".carousel-slider img").length;
         showSlide(index, slideIndexes[index]);
-    }, 3000);
+    }, 5000);
 });
 
