@@ -638,12 +638,11 @@ video {
   }
 
   .img1 {
-      width: 300px;
     display: flex;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* Esto hace que el div ocupe toda la altura de la ventana */
+    height: 80vh; /* Esto hace que el div ocupe toda la altura de la ventana */
 }
 
 .img2 {
@@ -651,7 +650,7 @@ video {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Esto hace que el div ocupe toda la altura de la ventana */
+  height: 80vh; /* Esto hace que el div ocupe toda la altura de la ventana */
 }
 
 
