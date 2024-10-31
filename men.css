@@ -31,6 +31,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 50px 0;
+  z-index: 1; /* Contenedor de imágenes estará detrás del menú */
 }
 
 .product-card {
@@ -44,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1; /* Contenedor de imágenes estará detrás del menú */
 }
 
 .product-card img {
@@ -125,7 +127,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1001;
+   z-index: 1001; /* Menú siempre estará encima */
     
 }
 
@@ -147,7 +149,7 @@ body {
     transition: 0.5s;
     overflow: hidden;
     transform: translateX(-100%);
-    z-index: 1000
+    z-index: 1001; /* Menú siempre estará encima */
 }
 
 .navigation.active {
@@ -702,10 +704,7 @@ video {
   margin: auto;
   display: flex;
   align-items: center;
-  
-  
-  
-  
+  z-index: 1; /* Contenedor de imágenes estará detrás del menú */
 }
 
 /* Estilo para el deslizador de imágenes */
@@ -720,7 +719,7 @@ video {
 }
 
 .carousel-slider img {
-  width: 100%; /* Ocupa el ancho total del carrusel */
+  max-width: 100%; /* Ocupa el ancho total del carrusel */
   height: auto;
   border-radius: 10px;
   
