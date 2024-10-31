@@ -24,6 +24,7 @@ body {
 .container {
     position: relative;
     width: 100%;
+    1002
 }
 
 /* Menu Icon */
@@ -667,8 +668,8 @@ video {
 /* Estilo del contenedor del carrusel */
 .carousel {
   position: relative;
-  width: 350px; /* Ancho reducido para ajustarse a los bordes */
-  height: 320px;
+  width: 380px; /* Ancho reducido para ajustarse a los bordes */
+  height: 350px;
   overflow: hidden;
   margin: auto;
   display: flex;
