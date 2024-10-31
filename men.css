@@ -226,27 +226,24 @@ video {
 }
 .product-container {
   display: flex;
-  flex-direction: row; /* Asegura que los elementos estén en una fila horizontal */
+
   justify-content: center; /* Centra los productos horizontalmente */
-  align-items: flex-start; /* Alinea los productos en la parte superior */
+ 
   gap: 20px; /* Espacio entre cada tarjeta de producto */
   margin: 50px 0;
   flex-wrap: wrap; /* Evita que los elementos bajen a una nueva línea */
-  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
 }
 
 
 .product-card {
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 450px; /* Ancho fijo para uniformidad */
-  padding: 20px 15px; /* Ajuste de padding para mantener contorno uniforme */
-  text-align: center;
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .product-card img {
@@ -670,8 +667,8 @@ video {
 /* Estilo del contenedor del carrusel */
 .carousel {
   position: relative;
-  width: 370px; /* Ancho reducido para ajustarse a los bordes */
-  height: 350px;
+  width: 350px; /* Ancho reducido para ajustarse a los bordes */
+  height: 320px;
   overflow: hidden;
   margin: auto;
   display: flex;
