@@ -643,8 +643,8 @@ video {
 }
 
 .carousel-dots .dot {
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   background-color: #bbb;
   border-radius: 50%;
   cursor: pointer;
