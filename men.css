@@ -609,8 +609,8 @@ video {
 /* Estilo del contenedor del carrusel */
 .carousel {
   position: relative;
-  width: 320px; /* Ancho del contenedor */
-  height: 300px; /* Altura del contenedor */
+  width: 340px; /* Ancho del contenedor */
+  height: 320px; /* Altura del contenedor */
   overflow: hidden;
   margin: auto;
   display: flex;
@@ -658,7 +658,7 @@ video {
 .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Aumenta el tamaño mínimo a 360px */
-  gap: 20px; /* Aumenta el espacio entre tarjetas */
+  gap: 30px; /* Aumenta el espacio entre tarjetas */
   margin: 100px 0;
   z-index: 1;
   justify-items: center;
