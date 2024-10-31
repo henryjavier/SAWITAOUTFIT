@@ -663,7 +663,7 @@ video {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Espacio entre cada tarjeta de producto */
-  margin: 50px 0;
+  margin: 80px 0;
   z-index: 1; /* Contenedor de imágenes estará detrás del menú */
 }
 
